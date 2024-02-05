@@ -86,7 +86,7 @@ transform-origin: right;
 
 .profile-page img{
     width: 180px;
-    /* height: 150px; */
+    height: 180px;
     border-radius: 50%;
     border: .25rem solid var(--main-color);
     margin-bottom: .8rem;
@@ -94,5 +94,74 @@ transform-origin: right;
 
 .profile-page h1{
     font-size: 2rem;
-    line-height: 2;
+    line-height: 1;
+}
+
+.profile-page h3{
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.profile-page .social-media{
+    margin: .6rem 0.8rem;
+}
+
+.profile-page .social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 .2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: transparent;
+    border: var(--border);
+    border-radius: 50%;
+    color: var(--main-color);
+    font-size: 1.5rem;
+    transition: 0.5s ease-in-out;
+}
+
+.profile-page .social-media a:hover{
+    background: var(--main-color);
+    color: var(--white-color);
+}
+.profile-page p{
+    text-align: justify;
+}
+
+.btn{
+    display: inline-flex;
+    width: 9.5rem;
+    height: 3rem;
+    background: var(--main-color);
+    border: var(--border);
+    border-radius: 0.3rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: var(--white-color);
+    font-weight: 500;
+    margin:0 1rem;
+    transition: 0.2sec ease-in-out;
+}
+
+.btn:hover{
+    background: transparent;
+    color: var(--main-color);
+    
+}
+.btn-box{
+    margin-top: 1.2rem;
+}
+
+.btn-box .btn:nth-child(2){
+    background: transparent;
+    color: var(--main-color);
+   
+}
+
+.btn-box .btn:nth-child(2):hover{
+    background:var(--main-color);
+    color: var(--white-color);
 }
