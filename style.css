@@ -85,9 +85,14 @@ transform-origin: right;
 }
 
 .profile-page img{
-    width: 150px;
-    height: 150px;
+    width: 180px;
+    /* height: 150px; */
     border-radius: 50%;
     border: .25rem solid var(--main-color);
     margin-bottom: .8rem;
+}
+
+.profile-page h1{
+    font-size: 2rem;
+    line-height: 2;
 }
