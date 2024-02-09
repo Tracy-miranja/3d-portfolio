@@ -1,46 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <!--boxcons icons-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="cover cover-left"></div>
+      <div class="cover cover-right turn"></div>
 
-   <div class="wrapper">
-   <div class="cover cover-left"></div>
-   <div class="cover cover-right turn"></div>
+      <div class="book">
+        <div class="book-page page-left">
+          <div class="profile-page">
+            <img src="profile.JPG" alt="" />
+            <h1>Tracy Miranja</h1>
+            <h3>Software developer</h3>
 
-   <div class="book">
-   <div class="book-page page-left">
-    <div class="profile-page">
-        <img src="profile.JPG" alt="" />
-        <h1>Tracy Miranja</h1>
-        <h3>Software developer</h3>
+            <div class="social-media">
+              <a href=""><i class="bx bxl-twitter"></i></a>
+              <a href=""><i class="bx bxl-linkedin"></i></a>
+              <a href=""><i class="bx bxl-github"></i></a>
+            </div>
 
-        <div class="social-media">
-            <a href=""><i class='bx bxl-twitter'></i></a>
-            <a href=""><i class='bx bxl-linkedin' ></i></a>
-            <a href=""><i class='bx bxl-github' ></i></a>
+            <p>
+              Hello👋, I'm a Full-Stack Developer and designer. My preferred
+              stack includes Ruby on Rails, JavaScript, and React. I'm actively
+              looking for new opportunities
+            </p>
+
+            <div class="btn-box">
+              <a href="#" class="btn">Download my CV</a>
+              <a href="#" class="btn contact-me">Contact Me</a>
+            </div>
+          </div>
         </div>
-
-       <p>Hello👋, I'm a Full-Stack Developer and designer. 
-        My preferred stack includes Ruby on Rails, JavaScript, 
-        and React. I'm actively looking for new opportunities</p>
-        
-        <div class="btn-box">
-            <a href="#" class="btn">Download my CV</a>
-            <a href="#" class="btn contact-me">Contact Me</a>
+        <!---page2-->
+        <div class="book-page page-right turn" id="turn-1">
+          <!--work experience-->
+          <div class="page-front">
+            <h1 class="title">Work Experience</h1>
+            <div class="workduc-box">
+              <div class="workduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i>2020-2021</span
+                >
+                <h3>Web developer - company</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s.
+                </p>
+              </div>
+              <div class="workduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i>2021-2022</span
+                >
+                <h3>Web developer - company</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s.
+                </p>
+              </div>
+              <div class="workduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i>2022-2023</span
+                >
+                <h3>Web developer - company</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s.
+                </p>
+              </div>
+            </div>
+            <span class="number-page">1</span>
+            <!--next number-btn-->
+            <span class="nextpev-btn" data-page="turn-1">
+              <i class="bx bx-chevron-right"></i>
+            </span>
+          </div>
+          <!--experience-->
+          <div class="page-back">
+            <h1 class="title">Education</h1>
+            <div class="workduc-box">
+              <div class="workduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i>2018-2020</span
+                >
+                <h3>Masters - University</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s.
+                </p>
+              </div>
+              <div class="workduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i>2020-2021</span
+                >
+                <h3>Masters - University</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s.
+                </p>
+              </div>
+              <div class="workduc-content">
+                <span class="year"
+                  ><i class="bx bxs-calendar"></i>2021-2023</span
+                >
+                <h3>Masters - University</h3>
+                <p>
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industry's
+                  standard dummy text ever since the 1500s.
+                </p>
+              </div>
+            </div>
+            <span class="number-page">2</span>
+            <!--next number-btn-->
+            <span class="nextpev-btn back" data-page="turn-1">
+              <i class="bx bx-chevron-left"></i>
+            </span>
+          </div>
         </div>
-
-    </div>
-   </div>
-   </div>
+      </div>
     </div>
 
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
