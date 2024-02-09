@@ -256,3 +256,48 @@ body {
 .nextpev-btn.back {
   left: 1.2rem;
 }
+
+.service-box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.service-box .service-content {
+  flex: 1 1 10rem;
+  border: var(--border);
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 0.8rem 0.5rem 1rem;
+  transition: 0.5s ease-in-out;
+}
+
+.service-box .service-content:hover {
+  box-shadow: var(--box-shadow);
+  background: var(--main-color);
+  color: #fff;
+}
+
+.service-content i {
+  font-size: 1.5rem;
+  color: var(--main-color);
+}
+
+.service-content h3 {
+  font-size: 1rem;
+}
+
+.service-content p {
+  margin-top: 0.2rem 0.8rem;
+}
+
+.service-content .btn {
+  width: 8rem;
+  height: 2.5rem;
+  margin-top: 4px;
+}
+
+.service-content .btn:hover {
+  background: var(--white-color);
+  color: #333;
+}
