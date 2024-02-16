@@ -27,6 +27,7 @@ body {
   min-height: 100vh;
   background-color: var(--bg-color);
   color: var(--text-color);
+  overflow: hidden;
 }
 
 .wrapper {
@@ -35,9 +36,22 @@ body {
   height: 45rem;
   align-self: center;
   padding: 2rem;
-  /* background-color: red; */
+  perspective: 250rem;
+  animation: show-animate 2s forwards;
 }
 
+@keyframes show-animate {
+  0%,
+  30% {
+    opacity: 0;
+    transform: rotate(-20deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+}
 .cover {
   position: absolute;
   top: 0;
@@ -53,6 +67,11 @@ body {
 
 .cover-left {
   z-index: -1;
+}
+
+.cover.cover-right {
+  z-index: 100;
+  transition: transform 1s cubic-bezier(0.645, 0.455, 0.355, 1);
 }
 
 .cover.cover-right.turn {
